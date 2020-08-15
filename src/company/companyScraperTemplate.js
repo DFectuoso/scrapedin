@@ -24,7 +24,7 @@ const template = {
             }
         }
     },
-    skills: {
+    employeesNumber: {
         selector: '.ember-view link-without-visited-state inline-block',
         fields: {
           count: '.v-align-middle'
