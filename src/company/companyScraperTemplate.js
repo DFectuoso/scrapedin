@@ -25,9 +25,9 @@ const template = {
         }
     },
     employeesNumber: {
-        selector: '.ember-view link-without-visited-state inline-block',
+        selector: '.ember-view link-without-visited-state',
         fields: {
-          count: '.v-align-middle'
+          count: 'span'
         }
     },    
 }
