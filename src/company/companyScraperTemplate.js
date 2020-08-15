@@ -19,11 +19,17 @@ const template = {
                 isMultipleFields: true
             },
             values:{
-                selector: 'dl',
+                selector: 'dl dd:not(.org-page-details__employees-on-linkedin-count)',
                 isMultipleFields: true
             }
         }
-    }
+    },
+    skills: {
+        selector: '.ember-view link-without-visited-state inline-block',
+        fields: {
+          count: '.v-align-middle'
+        }
+    },    
 }
 
 
