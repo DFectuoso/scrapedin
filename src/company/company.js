@@ -27,7 +27,7 @@ module.exports = async (browser, cookies, url, waitTimeToScrapMs = 500, puppetee
   company.about = (await scrapSection(page, template.about))[0];
   company.profile = (await scrapSection(page, template.profile))[0];
   company.employeesNumber = (await scrapSection(page, template.employeesNumber))[0];
-  company.employeesNumber.count = company.employeesNumber.count.replace(/\D/g, "")
+  company.employeesNumber.count = parseInt(company.employeesNumber.count.replace(/\D/g, ""))
 
   await page.close();
   logger.info(`finished scraping url: ${url}`);
