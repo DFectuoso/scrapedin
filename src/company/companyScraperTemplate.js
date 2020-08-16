@@ -25,7 +25,7 @@ const template = {
         }
     },
     employeesNumber: {
-        selector: '.ember-view link-without-visited-state',
+        selector: 'a[data-control-name="topcard_see_all_employees"]',
         fields: {
           count: 'span'
         }
